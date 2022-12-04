@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operator</title>
+</head>
+<body>
+    <pre>
+        = means value assign a=5
+        x+=y is same as x=x+y
+        x-=y is same as x=x-y
+        x*=y,x/=y,x**=y
+    </pre>
+    <script>
+        let x=5
+        let y=10
+         x+=y
+        document.write(`${x}`)
+        document.write(`<br>`)
+
+        x-=3
+        document.write(`${x}`)
+        document.write(`<br>`)
+        x*=2
+        document.write(`${x}`)
+        document.write(`<br>`)
+        x/=6
+        document.write(`${x}`)
+        document.write(`<br>`)
+
+        x**=2
+        document.write(`${x}`)
+        document.write(`<br>`)
+
+        //comparison operator
+        //<,>,=,<=,>=,==,===,!=, !==
+
+        document.write(x<y)
+        document.write(`<br>`)
+
+        document.write(x>y)
+        document.write(`<br>`)
+
+        document.write(10==='10')
+        document.write(`<br>`)
+
+        document.write(10=='10')
+        document.write(`<br>`)
+
+        document.write(10!='10')
+        document.write(`<br>`)
+
+        document.write(10!=='10')
+        document.write(`<br>`)
+
+        //logical operator
+        //or || (only one true = true)
+        //and &&  (sabai condition true hunu paryo vane)
+        //not !(true xa false)
+       
+        document.write(`<br>`)
+        document.write(5<10 || 10<8)
+
+        document.write(`<br>`)
+        document.write(5<10 && 10<8)
+        document.write(`<br>`)
+
+        var test=!(5<10 && 10<8)
+
+    </script>
+</body>
+</html>

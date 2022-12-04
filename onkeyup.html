@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeyup</title>
+</head>
+<body>
+    <input type="password" id="pwd" onkeyup="demoFunction()">
+    <h3 id="result"></h3>
+
+        <script>
+            const demoFunction=()=>{
+                //to read a input text 
+                //querySelector means css selector
+
+               const myInput=document.getElementById('pwd').value
+               document.querySelector('#result').innerHTML=myInput
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <pre>
+        function is a block of code to perform the particular task. It can be reuse many times, 
+        so it is necessary for large application.
+        we always call the function using parenthesis() except in specific condition
+        eg. myFunction()
+
+        we will define the function like this:
+
+        function functionName(){
+            ...code goes here..
+        }
+
+        in modern javascript we will use arrow function to define function as follows:
+
+        function functionName=() => {
+            ...code goes here..
+        }
+
+    </pre>
+<script>
+    //define the function
+    // function demoFunction(){
+    //     document.write('this is a function')
+    // }
+
+    //arrow function
+    const demoFunction = () => {
+        document.write('this is a arrow function')
+    }
+
+    //calling function
+    demoFunction()
+document.write('<br>')
+ //function with argument or parameter
+
+
+ //define the function
+ function addNumber(first_num, second_num){
+    document.write(first_num+second_num)
+ }
+
+ //call the function
+ addNumber(20,30)
+
+ document.write('<br>')
+
+ //function with return type
+const myFunction=(x,y)=>{
+    return x+y
+}
+
+ //call the function
+ const result = myFunction(10,20)
+ document.write(`${result} <br>`)
+
+
+ const data = myFunction(200,100)
+ document.write(`${data} <br>`)
+
+ 
+</script>
+
+</body>
+
+</html>

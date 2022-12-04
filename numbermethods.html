@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number methods</title>
+</head>
+<body>
+    <script>
+        const x=15.1236567
+        //toFixed() -> used to show many digits to be print after decimal point
+        document.write(`${x.toFixed(2)}<br>`)
+        document.write(`${x.toFixed(3)}<br>`)
+
+        //toPrecision() -> returns a string with a number written in a specific length
+        document.write(`${x.toPrecision(3)}<br>`) 
+
+        document.write(`${x.toExponential(3)}<br>`) 
+       //to convert string into number use the following methods
+       //Number()
+       //parseInt() -> returns only whole number
+       //parseFloat() -> returns whole number as well as floating number
+
+       y=parseInt("12.5 years")
+       document.write(`${y} <br>`)
+
+       y=parseFloat("12.5 years")
+       document.write(`${y} <br>`)
+    </script>
+</body>
+</html>

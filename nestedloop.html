@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    <pre>
+        nested loop-> loop inside another loop
+    </pre>
+    <script>
+        for(i=1;i<=10;i++){
+            for(j=1;j<=10;j++){
+                document.write(`${i}*${j}=${i*j} <br>`)
+            }
+            document.write('<hr>')
+        }
+
+
+        //pattern
+        for(x=1;x<=5;x++){
+            for(y=1;y<=5;y++){
+                document.write('*')
+            }
+            document.write('<br>')
+        }
+        document.write('<br>')
+        for(x=1;x<=5;x++){
+            for(y=1;y<=x;y++){
+                document.write('*') 
+            }
+            document.write('<br>')
+        }
+
+        document.write('<br>')
+        for(x=1;x<=5;x++){
+            for(y=5;y>=x;y--){
+                document.write('*') 
+            }
+            document.write('<br>')
+        }
+        document.write('<br>')
+
+        // for(x=1;x<=10;x++){
+        //     for(j=1;j<=x;j++){
+        //         document.write('*') 
+        //     }
+        //     document.write('<br>')
+        // }
+        
+      
+    </script>
+</body>
+</html>

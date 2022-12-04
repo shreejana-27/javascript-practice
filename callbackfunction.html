@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        let news = [
+            { newsTitle: 'First Title', newsContent: 'first content of the news' },
+            { newsTitle: 'Second Title', newsContent: 'second content of the news' },
+            { newsTitle: 'Third Title', newsContent: 'third content of the news' }
+        ]
+
+        //define the function showNews
+        const showNews = () => {
+            setTimeout(() => {
+                let result = ""
+                news.forEach(post => {
+                    result += `<li>${post.newsTitle}</>`
+                })
+                document.querySelector('div').innerHTML = result
+            }, 2000)
+        }
+        //if function/method call inside the function then it is called anonymous function 
+
+        //call the function showNews()
+        // showNews()
+
+        //define the function addNews()
+        const addNews = (newsdata, callback) => {
+            setTimeout(() => {
+                news.push(newsdata)
+                //call the function callback() after adding data to array
+                callback()
+            },3000)
+        }
+
+
+        //call the function addNews() with callback function showNews
+        addNews({ newsTitle: 'Fourth Title', newsContent: 'fourth content of the news' }, showNews)
+    </script>
+</body>
+
+</html>

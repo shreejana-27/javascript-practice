@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        const store = [
+            { storeCategory: 'Groceries', storeItems: 'Cooking ingredients' },
+            { storeCategory: 'Electronic Device', storeItems: 'Mobile Accessories' },
+            { storeCategory: 'Sports and Outdoor', storeItems: 'Racket Sport' },
+        ]
+        const showStore = () => {
+            setTimeout(() => {
+                let result = ""
+                store.map((post) => {
+                    result += `<b><ul>${post.storeCategory}</b><li>${post.storeItems}</li></ul>`
+                })
+                document.querySelector('div').innerHTML = result
+            },3000)
+        }
+
+        const addCategory = (storeData, callback) => {
+            setTimeout(() => {
+                store.push(storeData)
+                callback()
+            },1000)
+        }
+        addCategory({ storeCategory: 'Home Appliances', storeItems: 'Kitchen Appliances'}, showStore)
+
+    </script>
+</body>
+
+</html>

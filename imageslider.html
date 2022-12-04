@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        .container{
+            width: 600px;
+            height:300px;
+            margin:auto;
+        }
+        .container #image{
+            height: 100%;
+            width: 100%;
+        }
+        .left{
+            position:relative;
+            bottom: 50%;
+        }
+        .right{
+            position:relative;
+            bottom: 50%;
+           left: 91%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container" onmouseover="stops()" onmouseover="starts()">
+        <img src="images/a.jpg" alt="" id="image">
+        <button class="left" onclick="previous()">&lt;</button>
+        <button class="right" onclick="next()">&gt;</button>
+    </div>
+    <script src="imageslider.js"></script>
+</body>
+</html>

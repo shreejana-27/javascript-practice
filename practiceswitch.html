@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice switch</title>
+</head>
+<body>
+    <script>
+        const x=Number(prompt('provide the first value'))
+        const y=Number(prompt('provide the second value'))
+        const operator=prompt('Tell me what you want to do')
+
+        switch(operator){
+            case '+':
+            document.write(`sum is ${x+y}`)
+                break
+                case '-':
+            document.write(`difference is ${x-y}`)
+                break
+                case '*':
+            document.write(`product is ${x*y}`)
+                break
+                case '/':
+            document.write(`division is ${x/y}`)
+                break
+                case '%':
+            document.write(`reminder is ${x%y}`)
+                break
+                case '**':
+            document.write(`power is ${x**y}`)
+                break
+
+                default:
+                document.write('invalid result')
+        }
+    </script>
+</body>
+</html>

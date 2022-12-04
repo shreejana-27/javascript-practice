@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseout and mouseover</title>
+    <style>
+        .test{
+            height: 300px;
+            width: 500px;
+            margin:auto;
+            background-color: cornflowerblue;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="test" id="demo" onmouseover="over()" onmouseout="out()">
+     <h2 id="title">Hover over ME!!</h2>
+    
+    </div>
+    <script>
+    const over=()=>{
+        const btn=document.getElementById('demo')
+        btn.style.backgroundColor='red'
+        document.getElementById('title').innerHTML='this is the a mouse over'
+    }
+
+    const out=()=>{
+        const btn=document.getElementById('demo')
+        btn.style.backgroundColor='cornflowerblue'
+        // btn.innerHTML='this is a mouse out'
+        document.getElementById('title').innerHTML='this is a mouse out'
+    }
+    </script>
+</body>
+</html>

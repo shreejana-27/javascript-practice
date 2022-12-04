@@ -1,0 +1,16 @@
+Regular Expression
+/ regular expression goes between two  symbols/
+[a-z] -> it matches only lowercase alphabets
+[A-Z] -> it matches only uppercase alphabets
+[a-zA-Z] -> it matches all the lowercase and uppercase alphabets 
+[0-9] -> it matches only the numeric value
+[a-zA-Z0-9] -> it matches all the alphanumeric value
+^ -> it checks from the beginning
+$ -> it checks from the end
+. -> it matches a single character
+* -> it checks one or more precedence character
+?= -> it means the position of a particular value can be anywhere in the position
+{min_value,max_value}
+
+for special character use \
+eg: \@, \#,\*,\S(space) etc

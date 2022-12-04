@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        const text ='Welcome to dursikshya to read web programming'
+        //to count the number of characters in a string use .length
+        document.write(`${text.length} <br>`)
+
+        //to find the position of a specific string use indexOf()
+        document.write(`${text.indexOf('to')} <br>`)
+
+        //lastIndexOf() is used to find repeated string position
+        document.write(`${text.lastIndexOf('to')} <br>`)
+
+        document.write(`${text.search('web')} <br>`)
+        //replace
+        document.write(`${text.replace('read', 'learn')} <br>`)
+        //replaceAll()
+        document.write(`${text.replaceAll('to','to the')} <br>`)
+
+        //substring ->small part of a string
+        //slice(start,end)
+        //substring(start,end)
+        //substr(start,length)
+
+        document.write(`${text.slice(0,21)} <br>`)
+        document.write(`${text.substring(5,21)} <br>`)
+        document.write(`${text.substr(5,21)} <br>`)
+
+        //toUpperCase
+        //toLowerCase
+        document.write(`${text.toUpperCase()} <br>`)
+        document.write(`${text.toLowerCase()} <br>`)
+
+        //charAt()
+        //charCodeAt()
+        //concat
+        //split()
+        
+    </script>
+</body>
+</html>

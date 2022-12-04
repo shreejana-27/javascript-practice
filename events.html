@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <pre>
+        onClick -> when click in the html element
+        ondblclick -> double click on the element
+        onsubmit -> when a form is submitted
+        onload -> when a page is loaded
+        onchange -> when a input field value is changed
+        onmouseover -> hover over a element
+        onmouseout -> opposite of mouseover
+        onkeyup -> when a key is pressed
+        onkeydown -> same as onkeyup
+        onmousemove -> when a mouse moves over an element
+
+    </pre>
+
+    <button onclick="demo()">click to see the result</button>
+    <h3 id="result">
+
+    </h3>
+    <script>
+        
+    // function demo() {
+    //     // document.write(new Date())
+    //     document.getElementById('result').innerHTML=new Date() 
+    //     //time stamp date+time
+
+
+    // }
+    const demo=() => {
+        document.getElementById('result').innerHTML=new Date() 
+    }
+    </script>
+</body>
+</html>
